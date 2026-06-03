@@ -1,9 +1,8 @@
 streamlit
-spacy
+spacy==3.7.2
 nltk
-torch
-torchvision
 transformers==4.41.2
+torch==2.2.2
 reportlab
 SpeechRecognition
 pydub
