@@ -20,5 +20,5 @@ except OSError:
 # Load summarization model
 summarizer = pipeline(
     "summarization",
-    model="facebook/bart-large-cnn"
+    model="sshleifer/distilbart-cnn-12-6"
 )
