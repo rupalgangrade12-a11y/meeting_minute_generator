@@ -23,7 +23,7 @@ st.write(
 # ---------------- INPUT SECTION ----------------
 input_type = st.radio(
     "Choose input type:",
-    ["Text", "Audio (WAV only)"]
+    ["Text", "Audio (WAV ,MP3 )"]
 )
 
 meeting_text = ""
@@ -37,8 +37,8 @@ if input_type == "Text":
 
 else:
     audio_file = st.file_uploader(
-        "🎤 Upload WAV Audio (slow, clear speech)",
-        type=["wav"]
+        "🎤 Upload Audio (slow, clear speech)",
+        type=["wav", "mp3"]
     )
 
     if audio_file:
@@ -119,6 +119,6 @@ if st.button("🚀 Generate Minutes"):
 # ---------------- FOOTER ----------------
 st.markdown("---")
 st.markdown(
-    "✅ **Features:** Text/WAV Audio Input • NLP Summarization • "
+    "✅ **Features:** Text/Audio Input • NLP Summarization • "
     "Decisions • Action Items • Speaker Identification • PDF Export"
 )
